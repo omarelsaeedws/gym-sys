@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاشتراكات</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body dir="rtl">
+    <div class="container">
+        <div class="header">
+            <h2>الاشتراكات</h2>
+        </div>
+        <div class="inputs">
+            <label>الاسم</label>
+            <input type="text" placeholder="الاسم" id="yName">
+            <label>رقم الموبيل</label>
+            <input type="number" placeholder="رقم الموبيل" id="yNumber">
+            <label>قيمة الاشتراك</label>
+            <input type="number" placeholder="قيمة الاشترك" id="price">
+            <label>بداية الاشتراك</label>
+            <input type="text" id="start" placeholder="نهاية الاشتراك">
+            <label>نهاية الاشتراك</label>
+            <input type="text" id="end" placeholder="نهاية الاشتراك">
+            <button id="btnSubmit">اضافة</button>
+            <input type="search" placeholder="البحث بالاسم" id="search">
+        </div>
+        <div class="outputs">
+            <h3>المشتركين <span id="length">0</span></h3>
+            <table>
+                <thead>
+                    <td>ID</td>
+                    <td>الاسم</td>
+                    <td>رقم الموبيل</td>
+                    <td>قيمة الاشتراك</td>
+                    <td>بداية الاشتراك</td>
+                    <td>نهاية الاشتراك</td>
+                    <td>حذف</td>
+                </thead>
+               <tbody id="tbody">
+
+               </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
